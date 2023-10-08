@@ -2,10 +2,8 @@
 <%= link_to "Add New Movie List", new_list_path, class: "btn btn-dark position-absolute bottom-0 end-0" %>
 <div class="cards">
   <% @lists.each do |list| %>
-        <%= link_to list.name, list_path(list) %>
-        <%= link_to "Delete",
-  list_path(list),
-  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>
-    </div>
-  <% end %>
+    <%= link_to list.name, list_path(list) %>
+    <%= link_to "Delete", list_path(list), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>
+  </div>
+<% end %>
 </div>
