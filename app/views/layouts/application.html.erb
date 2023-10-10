@@ -11,6 +11,12 @@
   </head>
 
   <body>
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+  Breakfast
+  <%= link_to "Add New Movie List", new_list_path, class: "btn btn-dark position-absolute bottom-0 end-0" %>
+  </div>
+
+
     <%= yield %>
   </body>
 </html>
